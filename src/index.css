@@ -29,13 +29,31 @@ a {
 }
 
 .coeff {
-  /* position: absolute; */
-  background: #2d2f31;
-  border: 2px solid red;
+  background: #22272b;
   display: flex;
   justify-content: space-around;
   width: 250px;
   padding: 10px;
+}
+
+.coeff-btn {
+  border: 1px solid #6a6f76;
+  border-radius: .4rem;
+  background: transparent;
+  color: #8f939d;
+  width: 80px;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background .2s ease;
+}
+
+.coeff-btn:hover {
+  background: #00000091;
+}
+
+.coeff-btn:disabled:hover {
+  background: transparent;
 }
 
 .advert {

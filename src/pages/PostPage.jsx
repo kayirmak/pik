@@ -34,8 +34,10 @@ function PostPage() {
           </div>
           <p className="post-subtitle" style={{position: "relative"}}>
             <div className="coeff crossed" style={{position: "absolute", left: "50%", top: "15px", transform: "translate(-50%)"}}>
-              <div style={{color: "#8f939d"}}>1 <span style={{color: "#b8860b", fontWeight: 600}}>2.00</span></div>
-              <div style={{color: "#8f939d"}}>2 <span style={{color: "#b8860b", fontWeight: 600}}>1.80</span></div>
+              <button className="coeff-btn" disabled>2.00</button>
+              <button className="coeff-btn" disabled>1.80</button>
+              {/* <div style={{color: "#8f939d"}}>1 <span style={{color: "#b8860b", fontWeight: 600}}>2.00</span></div>
+              <div style={{color: "#8f939d"}}>2 <span style={{color: "#b8860b", fontWeight: 600}}>1.80</span></div> */}
             </div>
             <div className="bank bank-resp" style={{}}>Ставки не принимаются, читайте продолжение</div>
             Он меня заинтересовал описанием и кастом: в главной роли Джош Хатчерсон, за которым я слежу еще с детского возраста после фильма "Мост в Терабитию". В общем, врубил и получил именно то, на что рассчитывал: легкую и забавную историю, которая помогает отвлечься от мыслей перед сном.
@@ -58,8 +60,10 @@ function PostPage() {
           </div>
           <p className="post-subtitle" style={{position: "relative"}}>
             <div className="coeff" style={{position: "absolute", left: "50%", top: "35px", transform: "translate(-50%)"}}>
-              <div style={{color: "#8f939d"}}>1 <span style={{color: "#b8860b", fontWeight: 600}}>2.00</span></div>
-              <div style={{color: "#8f939d"}}>2 <span style={{color: "#b8860b", fontWeight: 600}}>1.80</span></div>
+              <button className="coeff-btn">2.00</button>
+              <button className="coeff-btn">1.80</button>
+              {/* <div style={{color: "#8f939d"}}>1 <span style={{color: "#b8860b", fontWeight: 600}}>2.00</span></div>
+              <div style={{color: "#8f939d"}}>2 <span style={{color: "#b8860b", fontWeight: 600}}>1.80</span></div> */}
             </div>
             Два главных героя игры — солдаты Тигра и Волк — оказываются настоящими людьми будущего, которые телепортируются в квартиру Джоша и требуют, чтобы он всех спас. Вскоре выясняется, что к будущей войне приведет изобретение одного из ученых в лаборатории, где работает Джош.
             <br /><br />
@@ -96,8 +100,14 @@ function PostPage() {
               </svg>
               2К
             </div>
-            <div className="bank">50.000€ bank</div>
-            <div className="bank">Плашка для текста</div>
+            <div className="post-elements-view">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path fill="#8f939d" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+              50.000€ bank
+            </div>
+            <div className="post-elements-view">
+              {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path fill="#8f939d" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V192c0-35.3-28.7-64-64-64H80c-8.8 0-16-7.2-16-16s7.2-16 16-16H448c17.7 0 32-14.3 32-32s-14.3-32-32-32H64zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> */}   
+              Плашка для текста
+            </div>
           </div>
         </div>
       </div>

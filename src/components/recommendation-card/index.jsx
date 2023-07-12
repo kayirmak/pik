@@ -5,7 +5,6 @@ function RecommendationCard({userName, userImg, editorName, editorImg, imgMain, 
   return (
     <Link to="/pik/post">
       <div className="recommendation-card">
-        <div className="billet bill-pos">Плашка куда можем<br />вставить текст</div>
         <div className="recommendation-card-titles">
           <span href="#" className="card-titles-user">
             <img src={userImg} alt="" />
