@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import ImgUser from '../../assets/imgs/non-avatar.png';
-import ImgMain from '../../assets/imgs/sample-for-card.jpg';
 import Rating from '../rating';
 
 import './style.css';
@@ -12,10 +10,10 @@ function Post({userName, userImg, createdTime, title, subtitle, imgMain, comment
         <div className="post">
           <Rating rate={rating} />
           <div className="post-head">
-            <a href="#" className="post-head-user">
+            <span className="post-head-user">
               <img src={userImg} alt="" />
               <span>{userName}</span>
-            </a>
+            </span>
             <span className="create-time">{createdTime}</span>
             <span className="three-dots">
               <svg>

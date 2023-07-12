@@ -6,7 +6,7 @@ import PostPage from '../pages/PostPage';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/pik',
     element: <MainLayout />,
     children: [
       {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         element: <MainPage />
       },
       {
-        path: '/post',
+        path: 'post',
         element: <PostPage />
       }
     ]

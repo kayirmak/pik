@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div className="header">
-      <Link to="/" className="header-logo">WatchMe</Link>
+      <Link to="/pik" className="header-logo">WatchMe</Link>
       <div className="header-auth">
         <button 
           className="header-auth-btn"
