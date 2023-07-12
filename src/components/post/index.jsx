@@ -7,7 +7,7 @@ function Post({userName, userImg, createdTime, title, subtitle, imgMain, comment
   return (
     <div className="post-wrap">
       <Link to="post">
-        <div className="post">
+        <div className="post post-res">
           <Rating rate={rating} />
           <div className="post-head">
             <span className="post-head-user">

@@ -48,8 +48,9 @@
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .rating {
+    display: none;
     left: -45px;
     transform: scale(.8);
   }

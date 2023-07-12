@@ -3,7 +3,7 @@ import './style.css';
 
 function Comments() {
   return (
-    <div className="comments add-pad">
+    <div className="comments">
       <div className="comments-head">
         <div className="comments-head-left">
           <span>Все комментарии</span>

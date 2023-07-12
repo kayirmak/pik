@@ -1,13 +1,14 @@
 .post-wrap {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   column-gap: 20px;
-  width: 800px;
+  /* max-width: 800px; */
   margin: 10px auto 0;
 }
 
 .post-wrap > a {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .post {
@@ -17,7 +18,12 @@
   padding: 10px 0 0;
   position: relative;
   cursor: pointer;
-  width: 100%;
+  max-width: 800px;
+  min-width: 200px;
+}
+
+.post-res {
+  width: 800px !important;
 }
 
 .post-head {
@@ -33,7 +39,7 @@
   column-gap: 8px;
   font-size: 13px;
   color: #fff;
-  padding: 5px 15px;
+  padding: 5px 0px;
 }
 
 .post-head-user img {
@@ -96,20 +102,20 @@
 .post-sub {
   color: #b9bdc7;
   font-size: 17px;
-  padding: 30px;
+  padding: 10px;
 }
 
 .post-title {
   color: #e0e3ea;
   line-height: 25px;
-  padding: 0 30px;
+  padding: 0 10px;
 }
 
 .post-subtitle {
   font-size: 14px;
   color: #e0e3ea;
   line-height: 25px;
-  padding: 15px 30px;
+  padding: 15px 10px;
 }
 
 .post-elements {
@@ -127,13 +133,31 @@
 
 @media (max-width: 1024px) {
   .post-wrap {
-    width: 600px;
+    /* width: 600px; */
+  }
+
+  .post-res {
+    width: 600px !important;
+    background: #262b30 !important;
   }
 }
 
 @media (max-width: 767px) {
   .post-wrap {
-    width: 350px;
+    /* width: 350px; */
+  }
+
+  .post-res {
+    width: 380px !important;
+    background: #262b30 !important;
+  }
+
+  .post-page-wrap {
+    margin: 0 auto;
+  }
+
+  .post {
+    background: transparent;
   }
 
   .post-page {
@@ -142,20 +166,30 @@
 }
 
 @media (max-width: 639px) {
-  .post-page-wrap {
+  /* .post-page-wrap {
     margin: 10px 0 0 auto;
-  }
+  } */
 }
 
 @media (max-width: 424px) {
   .post-wrap {
-    width: 300px;
+    /* width: 300px; */
+  }
+
+  .post-res {
+    width: 330px !important;
+    background: #262b30 !important;
   }
 }
 
 @media (max-width: 374px) {
   .post-wrap {
-    width: 250px;
+    /* width: 250px; */
+  }
+
+  .post-res {
+    width: 280px !important;
+    background: #262b30 !important;
   }
 
   .create-time {
@@ -168,7 +202,7 @@
 
   .post-sub {
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px;
   }
 
   .post-head-user {
@@ -178,13 +212,13 @@
   .post-title {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 20px;
+    padding: 0 10px;
     margin-bottom: 0;
   }
 
   .post-subtitle {
     font-size: 11px;
     line-height: 18px;
-    padding: 10px 20px;
+    padding: 10px;
   }
 }
