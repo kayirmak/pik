@@ -1,0 +1,32 @@
+.recommendation {
+  background-color: #262b30;
+  border: 1px solid #2d3236;
+  border-radius: 10px;
+  margin: 15px 20px;
+  padding: 23px;
+}
+
+.recommendation-title {
+  color: #b9bdc7;
+  margin-bottom: 20px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  transform: scale(.4);
+}
+
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  z-index: -99;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #363b42;
+  border-radius: 50%;
+}

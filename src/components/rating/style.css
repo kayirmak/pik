@@ -1,0 +1,56 @@
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  position: absolute;
+  left: -80px;
+}
+
+.rating-up svg,
+.rating-down svg {
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.rating-up svg path:hover {
+  fill: #63a330;
+}
+
+.rating-down svg path:hover {
+  fill: red;
+}
+
+.rating-num {
+  font-size: 20px;
+  color: #8f939d;
+}
+
+.hidden {
+  margin-top: 15px;
+  border: 1px solid #6a6f76;
+  border-radius: 4px;
+  width: 35px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hidden::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: #6a6f76;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 640px) {
+  .rating {
+    left: -45px;
+    transform: scale(.8);
+  }
+}

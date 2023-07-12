@@ -1,0 +1,103 @@
+.header {
+  background-color: #22272b;
+  box-shadow: 0px -4px 8px 0px #171a1d;
+  padding: 16px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+.header-auth-btn {
+  background-color: transparent;
+  height: 28px;
+  padding: 0 7px;
+  color: #5d8244;
+  border: 1px solid #638c47;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-content-title {
+  color: #e0e3ea;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.modal-content-input-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 100%;
+}
+
+.modal-content-input {
+  border: 1px solid #21262a;
+  background: transparent;
+  padding: 0 20px;
+  height: 30px;
+  border-radius: .6rem;
+  outline: none;
+  color: #fff;
+}
+
+.modal-content-forgot-pass {
+  font-size: 13px;
+  color: #618f45;
+}
+
+.modal-content-signin {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: #638c47;
+  border: none;
+  border-radius: .6rem;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.modal-content-create {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f939d;
+  background: #2d3236;
+  border: none;
+  border-radius: .6rem;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.modal-content-policy {
+  font-size: 13px;
+  color: #8f939d;
+  text-align: left;
+  line-height: 25px;
+  margin: 10px 0;
+}
+
+.warning {
+  font-size: 13px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.808);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  background: red;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 12px 20px;
+  }
+}
